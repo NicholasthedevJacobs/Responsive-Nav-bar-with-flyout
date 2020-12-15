@@ -42,11 +42,11 @@ span:hover{
 color: #0b775c;
 }
 
-.top-level:before,
+/* .top-level:before,
 .top-level:after{
    content:'';
    display: table;
-}
+} */
 
 .top-level:after{
    clear: both;
@@ -54,7 +54,7 @@ color: #0b775c;
 
 .top-level li{
    float: left;
-   box-shadow: 1px 0 0 #444;
+   /* box-shadow: 1px 0 0 #444; */
    position: relative;
 }
 
@@ -75,7 +75,7 @@ color: #0b775c;
    top: 40px;
    left: 0;
    z-index: 1;
-   background: rgb(91, 146, 121);
+   background:rgb(91, 146, 121);
   
    transition: all .3s ease-in-out;
    
@@ -96,9 +96,9 @@ color: #0b775c;
 
 .top-level ul li{
     float: none;
-    display: block;
+    /* display: block;
     border: 0;
-    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666; */
     
 }
 
@@ -134,9 +134,7 @@ color: #0b775c;
 
 
 
-.top-level ul a:hover{
-    background-color: #41bd6adc;;
-}
+
 
 .top-level ul li:first-child > a{
     border-radius: 3px 3px 0 0;
