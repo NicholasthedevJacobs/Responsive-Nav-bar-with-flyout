@@ -62,7 +62,7 @@ color: #0b775c;
 
 .top-level li:hover > a{
    color: #0b775c;
-   background: #262626;
+   background: #0b775c;
 }
 
 .top-level ul{
@@ -73,7 +73,7 @@ color: #0b775c;
    top: 40px;
    left: 0;
    z-index: 1;
-   background: #262626;
+   background: #0b775c;
   
    transition: all .3s ease-in-out;
    
@@ -113,7 +113,7 @@ color: #0b775c;
 }
 
 .top-level ul a:hover{
-    background-color: #E04818;;
+    background-color: #41bd6adc;;
 }
 
 .top-level ul li:first-child > a{
