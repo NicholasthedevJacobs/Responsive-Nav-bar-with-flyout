@@ -58,9 +58,35 @@ color: #0b775c;
    position: relative;
 }
 
-.drop-down li:hover{
-    background: rgb(150, 194, 174);
+
+
+/* .drop-down li{
+    background:rgb(91, 146, 121);
+} */
+
+.drop-down li ul{
+    background: rgb(138, 178, 153);
+
 }
+.drop-down li:hover{
+    background: rgb(138, 178, 153);
+    width: 150px;
+}
+
+.drop-down ul li:hover{
+    background:rgb(150, 194, 174);
+}
+
+.fly-out ul li{
+    background: rgb(150, 194, 174);
+    width: 200px;
+    
+    
+}
+.drop-down > .fly-out li a{ 
+    width: 400px;
+}
+
 
 .drop-down li > a > span:hover{
     color: #ffffff;
@@ -77,7 +103,7 @@ color: #0b775c;
    z-index: 1;
    background:rgb(91, 146, 121);
   
-   transition: all .3s ease-in-out;
+   transition: all .5s ease-in-out;
    
    
 }
@@ -125,11 +151,17 @@ color: #0b775c;
 
 .fly-out li {
     width: 100px;
+    background: rgb(138, 178, 153);
+    
 }
 
+.fly-out li ul:hover{
+    color: #030303;
+}
 .fly-out li ul{
     width: 250px;
     padding-right: 100px;
+    
 }
 
 
