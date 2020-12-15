@@ -43,7 +43,16 @@ span:hover{
    
 }
 
- .drop-down:hover > li > span{
+li > a{
+    text-decoration: none;
+}
+
+nav > ul > li:hover > a > span{
+    color:rgb(91, 146, 121);
+}
+
+
+.drop-down:hover > li > span{
     color: #ffffff;
 }
 .drop-down > li:hover > span:hover{
