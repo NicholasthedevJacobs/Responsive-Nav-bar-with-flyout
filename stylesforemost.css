@@ -58,8 +58,8 @@ color: #0b775c;
    position: relative;
 }
 
-.drop-down:hover{
-    background: #0b775c;
+.drop-down li:hover{
+    background: rgb(150, 194, 174);
 }
 
 .drop-down li > a > span:hover{
@@ -75,7 +75,7 @@ color: #0b775c;
    top: 40px;
    left: 0;
    z-index: 1;
-   background: #0b775c;
+   background: rgb(91, 146, 121);
   
    transition: all .3s ease-in-out;
    
@@ -117,7 +117,7 @@ color: #0b775c;
 
 .fly-out{
 
-    width: 200px;
+    width: 210px;
     display: block;
     white-space: nowrap;
     float: none;  
@@ -125,6 +125,11 @@ color: #0b775c;
 
 .fly-out li {
     width: 100px;
+}
+
+.fly-out li ul{
+    width: 250px;
+    padding-right: 100px;
 }
 
 
