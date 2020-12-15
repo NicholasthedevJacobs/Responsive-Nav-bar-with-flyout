@@ -1,27 +1,24 @@
 nav{
 background: #ffffff;
 font-size: 13px;
-
-
 }
 
 span {
     color: #fcfdfd;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    position: center;
-    
+    position: center;  
 }
 
 li {
     position: relative;
-    padding: 12px 30px;
-    
+    padding: 12px 30px; 
 }
 
 .span ul > li:hover{
     pointer-events: none;
     color: #c1c1c1;
+    
 }
 .top-level, .top-level ul {
   list-style-type: none;
@@ -38,11 +35,20 @@ li {
    height: 40px;
    margin: 50px auto;
    background-color: #030303;
-   color: rgb(253, 253, 251);      
+   color: rgb(253, 253, 251);  
 }
 
 span:hover{
-color: rgb(91, 146, 121);
+   color: rgb(91, 146, 121);
+   
+}
+
+ .drop-down:hover > li > span{
+    color: #ffffff;
+}
+.drop-down > li:hover > span:hover{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /* .top-level:before,
@@ -74,6 +80,7 @@ color: rgb(91, 146, 121);
 .drop-down li:hover{
     background: rgb(138, 178, 153);
     width: 150px;
+    
 }
 
 .drop-down ul li:hover{
@@ -82,17 +89,14 @@ color: rgb(91, 146, 121);
 
 .fly-out ul li{
     background: rgb(150, 194, 174);
-    width: 200px;
-    
-    
+    width: 200px; 
 }
 
 .fly-out li ul li{
-    width: 175px;  
+    width: 200px;  
 }
 .drop-down li > a > span:hover{
     color: #ffffff;
-    
 }
 
 .top-level ul{
@@ -104,10 +108,7 @@ color: rgb(91, 146, 121);
    left: 0;
    z-index: 1;
    background:rgb(91, 146, 121);
-  
    transition: all .5s ease-in-out;
-   
-   
 }
 
 .top-level li:hover > ul{
@@ -119,32 +120,22 @@ color: rgb(91, 146, 121);
 .top-level ul ul{
     top: 0;
     left: 210px;
-    margin: 0 0 0 10px;
+    /* margin: 0 0 0 10px; */
 }
 
 .top-level ul li{
-    float: none;
-    /* display: block;
-    border: 0;
-    box-shadow: 0 1px 0 #111, 0 2px 0 #666; */
-    
-}
-
-.top-level ul li:last-child{
-    box-shadow: none;
+    float: none;   
 }
 
 .top-level ul a{
-    padding: 0px;
     width: 150px;
     display: block;
     white-space: nowrap;
     float: none;
-    
+    text-decoration: none;
 }
 
 .fly-out{
-
     width: 210px;
     display: block;
     white-space: nowrap;
@@ -154,33 +145,4 @@ color: rgb(91, 146, 121);
 .fly-out li {
     width: 100px;
     background: rgb(138, 178, 153);
-    
-}
-
-.fly-out li ul:hover{
-    color: #030303;
-}
-.fly-out li ul{
-    width: 250px;
-    padding-right: 100px;
-    
-}
-
-
-
-
-
-.top-level ul li:first-child > a{
-    border-radius: 3px 3px 0 0;
-}
-
-.menu ul li:first-child > a:after{
-    content: '';
-    position: absolute;
-    left: 40px;
-    top: -6px;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid #fff;
-    border-top: 6px solid #fff;
 }
