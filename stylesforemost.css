@@ -16,8 +16,13 @@ span {
 li {
     position: relative;
     padding: 12px 30px;
+    
 }
 
+.span ul > li:hover{
+    pointer-events: none;
+    color: #c1c1c1;
+}
 .top-level, .top-level ul {
   list-style-type: none;
   margin: 0;
@@ -60,9 +65,15 @@ color: #0b775c;
    font-family: Baloo;
 }
 
-.top-level li:hover > a{
-   color: #0b775c;
-   background: #0b775c;
+
+
+.drop-down:hover{
+    background: #0b775c;
+}
+
+.drop-down li > a > span:hover{
+    color: #ffffff;
+    
 }
 
 .top-level ul{
