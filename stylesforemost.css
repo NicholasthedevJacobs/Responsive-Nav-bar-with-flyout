@@ -1,8 +1,3 @@
-nav{
-background: #ffffff;
-font-size: 13px;
-}
-
 span {
     color: #fcfdfd;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,32 +10,8 @@ li {
     padding: 12px 30px; 
 }
 
-.span ul > li:hover{
-    pointer-events: none;
-    color: #c1c1c1;
-    
-}
-.top-level, .top-level ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.top-level li:hover > span{
-    color: rgb(91, 146, 121);
-}
-
-.top-level{
-   width: 900px;
-   height: 40px;
-   margin: 50px auto;
-   background-color: #030303;
-   color: rgb(253, 253, 251);  
-}
-
 span:hover{
    color: rgb(91, 146, 121);
-   
 }
 
 li > a{
@@ -60,27 +31,68 @@ nav > ul > li:hover > a > span{
     text-decoration: none;
 }
 
-/* .top-level:before,
-.top-level:after{
-   content:'';
-   display: table;
-} */
-
 .top-level:after{
    clear: both;
 }
 
+.top-level, .top-level ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.top-level li:hover > span{
+    color: rgb(91, 146, 121);
+}
+  
+.top-level{
+     
+    width: 900px;
+    height: 40px;
+    margin: 50px auto;
+    background-color: #030303;
+    color: rgb(253, 253, 251);  
+}
+  
 .top-level li{
    float: left;
-   /* box-shadow: 1px 0 0 #444; */
    position: relative;
 }
 
-
-
-/* .drop-down li{
+.top-level ul{
+    margin: 20px 0 0 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 1;
     background:rgb(91, 146, 121);
-} */
+    transition: all .5s ease-in-out;
+ }
+ 
+ .top-level li:hover > ul{
+     opacity: 1;
+     visibility: visible;
+     margin: 0;
+ }
+ 
+ .top-level ul ul{
+     top: 0;
+     left: 210px;
+ }
+ 
+ .top-level ul li{
+     float: none;   
+ }
+ 
+ .top-level ul a{
+     width: 150px;
+     display: block;
+     white-space: nowrap;
+     float: none;
+     text-decoration: none;
+ }
 
 .drop-down li ul{
     background: rgb(138, 178, 153);
@@ -89,59 +101,18 @@ nav > ul > li:hover > a > span{
 .drop-down li:hover{
     background: rgb(138, 178, 153);
     width: 150px;
-    
 }
 
 .drop-down ul li:hover{
     background:rgb(150, 194, 174);
 }
 
-.fly-out ul li{
-    background: rgb(150, 194, 174);
-    width: 200px; 
-}
-
-.fly-out li ul li{
-    width: 200px;  
-}
 .drop-down li > a > span:hover{
     color: #ffffff;
 }
 
-.top-level ul{
-   margin: 20px 0 0 0;
-   opacity: 0;
-   visibility: hidden;
-   position: absolute;
-   top: 40px;
-   left: 0;
-   z-index: 1;
-   background:rgb(91, 146, 121);
-   transition: all .5s ease-in-out;
-}
-
-.top-level li:hover > ul{
-    opacity: 1;
-    visibility: visible;
-    margin: 0;
-}
-
-.top-level ul ul{
-    top: 0;
-    left: 210px;
-    /* margin: 0 0 0 10px; */
-}
-
-.top-level ul li{
-    float: none;   
-}
-
-.top-level ul a{
-    width: 150px;
-    display: block;
-    white-space: nowrap;
-    float: none;
-    text-decoration: none;
+.drop-down:hover > li > span{
+    color: #ffffff;
 }
 
 .fly-out{
@@ -154,4 +125,13 @@ nav > ul > li:hover > a > span{
 .fly-out li {
     width: 100px;
     background: rgb(138, 178, 153);
+}
+
+.fly-out ul li{
+    background: rgb(150, 194, 174);
+    width: 200px; 
+}
+
+.fly-out li ul li{
+    width: 200px;  
 }
